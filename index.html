@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Amochis Carta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p>♡ Cartita para ti ♡</p>
+    </div>
+
+    <!-- Letter Screen (Pantalla Principal con la pregunta ¿Me amas?) -->
+    <div id="letter-container" class="screen">
+      <div class="letter-window">
+        <h1 id="letter-title">¿Me amas?</h1>
+
+        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+
+        <!-- Botones Sí / No iniciales -->
+        <div class="buttons" id="letter-buttons">
+          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+          <div class="no-wrapper">
+            <img src="no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+
+        <!-- Texto final y Botón Next (ocultos inicialmente) -->
+        <p id="final-text" class="final-text" style="display: none;">
+          <strong>Querida señorita amochis:</strong> Estoy muy feliz de que me hayas dado la oportunidad de estar contigo. Eres la persona más maravillosa que he conocido y cada día a tu lado es un regalo. Hemos pasado tanto por este año y medio, cada que estoy contigo es una renovación de mi amor por ti, un aliento de vida, tus ojos son una verbigracia de cómo vivir. 
+        </p>
+
+        <div class="buttons" id="next-button-container" style="display: none;">
+          <img src="next.png" class="btn next-btn" alt="Next" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd Letter Screen (Segunda pantalla de la carta) -->
+    <div id="second-letter-container" class="screen" style="display: none;">
+      <div class="letter-window">
+        <img src="amochis.gif" class="cat" id="amochis-img" />
+        <p class="final-text">
+          Mi amor por ti es infinito y eterno. Te he visto esforzarte, eres a quien más admiro, y a quien más aprecio. Gracias por ser mi compañera, mi mejor amiga y mi amor. Te amo con todo mi corazón y siempre lo haré.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
